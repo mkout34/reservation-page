@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>예약 페이지</title>
+  <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+  <form id="bookingForm">
+    <label for="name">이름:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="date">날짜:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="time">시간:</label>
+    <select id="time" name="time">
+      <option value="10:00">18:00</option>
+      <option value="10:00">19:00</option>
+      <option value="14:00">20:00</option>
+      <option value="19:00">21:00</option>
+    </select>
+
+    <button type="submit">예약하기</button>
+  </form>
+
+  <div id="message"></div>
+
+  <script src="reservation.js"></script>
+</body>
+</html>
