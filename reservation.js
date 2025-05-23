@@ -1,18 +1,14 @@
-document.getElementById("bookingForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // 폼 전송 방지
+function submitBooking() {
+  const id = document.getElementById('userId').value;
+  const name = document.getElementById('userName').value;
+  const phone = document.getElementById('userPhone').value;
+  const date = document.getElementById('date').value;
+  const time = document.getElementById('time').value;
 
-  const name = document.getElementById("name").value.trim();
-  const date = document.getElementById("date").value;
-  const time = document.getElementById("time").value;
-
-  const messageDiv = document.getElementById("message");
-
-  if (name === "" || date === "" || time === "") {
-    messageDiv.style.color = "red";
-    messageDiv.textContent = "모든 정보를 입력해주세요.";
+  if (!id || !name || !phone || !date || !time) {
+    alert("모든 항목을 입력해주세요.");
     return;
   }
 
-  messageDiv.style.color = "blue";
-  messageDiv.textContent = `${name}님의 ${date} ${time} 예약이 완료되었습니다!`;
-});
+  alert(`${name}님, ${date} ${time}에 예약이 완료되었습니다.`);
+}

@@ -1,54 +1,55 @@
 body {
-  font-family: '맑은 고딕', sans-serif;
-  background-color: #f0f4f8;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  justify-content: center;  /* 중앙 정렬 */
+  padding: 40px 20px;
+  margin: 0;
 }
 
-form {
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
-}
-
-label {
-  display: block;
-  margin-top: 15px;
-  font-weight: bold;
-}
-
-input, select {
+.booking-form {
   width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
+  max-width: 400px;         /* ✅ 너비 제한 (작게 보이게) */
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
 }
 
-button {
-  margin-top: 20px;
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+input, select, button {
+  max-width: 100%;
   width: 100%;
   padding: 10px;
-  background-color: blue;
-  color: white;
-  border: none;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
+}
+
+details {
+  margin-top: 10px;
+}
+
+summary {
+  font-weight: bold;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: purple;
+.userInfo {
+  display: flex;
+  gap: 10px;
 }
 
-#message {
-  margin-top: 20px;
-  text-align: center;
-  font-weight: bold;
-  color: black;
+.userInfo input {
+  flex: 1;
+  min-width: 0;
 }
