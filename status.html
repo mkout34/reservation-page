@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>예약 현황</title>
+  <link rel="stylesheet" href="status.css">
+</head>
+<body>
+  <h1>예약 현황</h1>
+  <table id="statusTable" border="1">
+    <thead>
+      <tr>
+        <th>날짜</th>
+        <th>시간</th>
+        <th>예약 건수</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- 데이터가 여기에 채워짐 -->
+    </tbody>
+  </table>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"></script>
+
+  <!-- 별도 JS 파일 -->
+  <script src="status.js"></script>
+</body>
+</html>
