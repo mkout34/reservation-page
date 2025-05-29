@@ -1,11 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <title>예약 페이지</title>
   <link rel="stylesheet" href="reservation.css">
 </head>
+
 <body>
   <h1>예약 페이지</h1>
 
@@ -27,7 +28,7 @@
       <option value="21:00">21:00 ~ 21:30</option>
     </select>
 
-    <button type="button" onclick="checkAvailability()">현황 확인</button>
+    <button type="button" onclick="startReservation()">예약하기</button>
   </div>
 
   <!-- 2. 예약 정보 입력: 마감되지 않았을 때만 표시 -->
@@ -67,10 +68,11 @@
   </section>
 
   <!-- Firebase SDK -->
-  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
 
   <!-- Firebase 초기화 및 예약 스크립트 연결 -->
   <script src="reservation.js"></script>
 </body>
+
 </html>
