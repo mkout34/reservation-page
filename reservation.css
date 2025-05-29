@@ -14,6 +14,24 @@ h1 {
   margin-bottom: 30px;
 }
 
+.timeCheck,
+.bookingForm,
+.faqSection {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.timeCheck h3,
+.bookingForm h3,
+.faqSection h2 {
+  margin-top: 0;
+}
+
 .bookingForm {
   background: white;
   padding: 24px;
@@ -28,8 +46,7 @@ h1 {
 }
 
 .bookingForm input,
-.bookingForm select
-{
+.bookingForm select {
   padding: 8px 10px;
   font-size: 14px;
   border: 1px solid #ccc;
